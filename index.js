@@ -20,11 +20,11 @@ var getnum=parseInt(req.body.num);
 
 if(getnum%2==0)
 {
-    res.send("Even number")
+    res.status(200).json("Even number")
 }
 else
 {
-    res.send("Odd number")
+    res.status(200).json("Odd number")
 }
 })
 
